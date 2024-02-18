@@ -1,0 +1,78 @@
+.background {
+    background-image: url('../img/tttask.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 300px; /* ارتفاع الصورة */
+    position: relative;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.blur-effect {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.5); /* لون الخلفية مع الشفافية */
+    filter: blur(10px); /* درجة التوهج */
+}
+
+.main-section {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.add-section {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.add-section input[type="text"] {
+    width: 70%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-right: 10px;
+}
+
+.add-section button {
+    padding: 5px 10px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.show-todo-section {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.todo-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.todo-item input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.todo-item h2 {
+    margin: 0;
+    flex-grow: 1;
+}
+
+.todo-item small {
+    color: #6c757d;
+}
